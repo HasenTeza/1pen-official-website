@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商城系统</title>
+    <link rel="SHORTCUT ICON" href="./img/yp_icon.png" />
+    <script async="async" type="text/javascript" src="js/rem.js"></script>
+    <script src="js/jq.js"></script>
+    <script src="./dist/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/yyhz.css">
+</head>
+
+<body>
+    <div class="yp_box">
+        <div class="yinying">
+            <div class="nav_list">
+                <div class="nav_title">
+                    <span>一盆社区</span>
+                    <img class="navList_img" src="./img/cha.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./zhsq.html">智慧社区</a></li>
+                    <li><a href="./gnjf.html">缴费系统</a></li>
+                    <li><a href="./znsgd.html">智能蔬果店</a></li>
+                    <li><a href="./yyhz.html">运营合作</a></li>
+                    <li style="color:#ff6b6b"><a href="./scxt.html">商城系统</a></li>
+                    <li><a href="./gywm.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <header class="head">
+            <div class="title">
+                <h1>一盆社区</h1>
+            </div>
+            <div class="nav">=</div>
+
+        </header>
+        <div class="banner">
+            <img alt="" src="./img/banner2.jpg" style="width:100%;">
+            <!-- 引用的swiper组件 -->
+            <!-- <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner3.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> -->
+        </div>
+        <section class="content">
+
+            <div class="content3">
+                <img class="c3_img" src="./img/jm.png" alt="">
+                <div class="c3_content">
+                    <div class="c3_title">「社区拼团」最流行的商业模式</div>
+                    <span>可结合社区线下自提点，开展线上拼团，开自由开团、设置成团人数、可分享拼团给好友和邻居。</span>
+                </div>
+            </div>
+            <div class="content4">
+                <img class="c4_img" src="./img/hz.png" alt="">
+                <div class="c4_content">
+                    <div class="c4_title">「社区商城」电商模式的成功落地</div>
+                    <span>推进商品、猜你喜欢、商品分类、购物车、会员订单、物流系统，支持微信+支付宝支付接口。</span>
+                </div>
+            </div>
+            <div class="content3">
+                <img class="c3_img" src="./img/jm.png" alt="">
+                <div class="c3_content">
+                    <div class="c3_title">用「APP+小程序」开发的商城系统</div>
+                    <span>原生APP，微信小程序，同步数据，自主研发，彰显技术实力。</span>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <footer>
+                <div class="lxwm">
+                    <h3>联系我们</h3>
+                    <p>北京亿澎互联网科技有限公司</p>
+                    <p>联系电话：&nbsp;&nbsp;18612507000</p>
+                    <p>公司地址：北京市朝阳区十里堡北里甲34号汉庭酒店院内3号楼二层</p>
+                </div>
+                <div class="ewm">
+                    <img src="./img/ewm.png" alt="">
+                    <span>微信扫一扫</span>
+                    <span>“一盆社区公众号”</span>
+                </div>
+            </footer>
+            <div class="foot_btn">
+                <div class="btnBtn">联系我们</div>
+                <div class="btn_yinying">
+                    <div class="btn_lxwm">
+                        <div class="btn_title">
+                            <span>联系我们</span>
+                            <span class="btn_cha">x</span>
+                        </div>
+                        <div class="btn_content">
+                            <p style="text-align:center;">请拨打联系电话：</p>
+                           <span style="display:block; height: .6rem;"> 何：&nbsp;18612507000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                //banner组件
+                var mySwiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    loop: true,
+                    autoplay: 3000,
+                    autoplayDisableOnInteraction: false    /* 注意此参数，默认为true */
+                });
+                //导航
+                $('.nav').on('click', function () {
+                    $(".yinying").stop().animate({ width: "10.8rem" }, 200);
+                    $('html,body').addClass('ovfHiden'); //使网页不可滚动
+                })
+                $('.navList_img').on('click', function () {
+                    $(".yinying").stop().animate({ width: "0" }, 200);
+                    $('html,body').removeClass('ovfHiden'); //使网页恢复可滚
+                })
+
+                //底部按钮
+                $('.btnBtn').on('click', function () {
+                    $(".btn_yinying").stop().animate({ bottom: "0" }, 200);
+                    $(".btn_lxwm").stop().animate({ bottom: "0" }, 200);
+                    $('html,body').addClass('ovfHiden'); //使网页不可滚动
+                })
+                $('.btn_cha').on('click', function () {
+                    $(".btn_yinying").stop().animate({ bottom: "-100rem" }, 200);
+                    $(".btn_lxwm").stop().animate({ bottom: "-7.3rem" }, 200);
+                    $('html,body').removeClass('ovfHiden'); //使网页恢复可滚
+                })
+
+            </script>
+    </div>
+</body>
+
+</html>

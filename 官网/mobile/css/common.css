@@ -1,0 +1,199 @@
+body,
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+    font-family: "微软雅黑";
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+i {
+    font-style: normal;
+}
+
+p {
+    margin: 0;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.ovfHiden{
+    overflow: hidden;
+    height: 100%;
+}
+.yp_box {
+    width: 10.80rem;
+    position: relative;
+  }
+  .yp_box .yinying {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 200%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
+  .yp_box .yinying .nav_list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7rem;
+    height: 10rem;
+    background-color: #fff;
+  }
+  .yp_box .yinying .nav_list ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .yp_box .yinying .nav_list .nav_title {
+    width: 100%;
+    height: 1.2rem;
+    background: url(../img/yp_icon1.png) no-repeat 0 0.1rem;
+    background-size: 1rem 1rem;
+    text-indent: 1rem;
+    line-height: 1.2rem;
+    color: #ff6b6b;
+    position: relative;
+  }
+  .yp_box .yinying .nav_list .nav_title .navList_img {
+    position: absolute;
+    right: .5rem;
+    top: .35rem;
+    width: .6rem;
+    height: .6rem;
+  }
+  .yp_box .yinying .nav_list ul {
+    padding: .5rem;
+  }
+  .yp_box .yinying .nav_list ul li {
+    width: 100%;
+    height: .8rem;
+    margin-bottom: .2rem;
+    padding: 0 .2rem;
+  }
+  .yp_box .head {
+    position: fixed;
+    left: 0;
+    height: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 10.8rem;
+    height: 1.65rem;
+    box-shadow: 0 0 0.1rem 0rem rgba(0, 0, 0, 0.2);
+  }
+  .yp_box .head .title {
+    float: left;
+    height: 100%;
+    background: url(../img/yp_icon1.png) no-repeat 0 0.15rem;
+    background-size: 1.2rem 1.2rem;
+  }
+  .yp_box .head .title h1 {
+    height: 100%;
+    text-indent: 1rem;
+    line-height: 1.65rem;
+    color: #ff6b6b;
+  }
+  .yp_box .head .nav {
+    float: right;
+    width: 1.65rem;
+    height: 1.65rem;
+    background: url(../img/nav.png) no-repeat 0.52rem 0.52rem;
+    background-size: 0.6rem 0.6rem;
+    text-indent: -9999rem;
+  }
+  .yp_box .banner {
+    padding-top: 1.65rem;
+    width: 100%;
+    height: 10.7rem;
+  }
+  .yp_box .banner .swiper-container {
+    height: 10.7rem;
+  }
+  .yp_box .banner .swiper-container img {
+    width: 10.8rem;
+    height: 100%;
+  }
+  
+
+
+  .yp_box .foot_btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+    height: 1.3rem;
+    background-color: #ff6b6b;
+    text-align: center;
+    font-size: .32rem;
+    line-height: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+  }
+  .yp_box .foot_btn .btn_yinying {
+    position: absolute;
+    left: 0;
+    bottom: -100rem;
+    width: 100%;
+    height: 100rem;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .yp_box .foot_btn .btn_yinying .btn_lxwm {
+    background-color: #fff;
+    width: 100%;
+    height: 6rem;
+    position: absolute;
+    left: 0;
+    bottom: -7.3rem;
+    color: #000;
+    z-index: 100;
+  }
+  .yp_box .foot_btn .btn_yinying .btn_lxwm .btn_title {
+    padding-top: 1.5rem;
+    line-height: 1rem;
+    font-size: .56rem;
+    font-weight: 600;
+  }
+  .yp_box .foot_btn .btn_yinying .btn_lxwm .btn_title span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+    width: 1rem;
+    height: 1rem;
+    background: url(../img/cha.png) no-repeat 0.2rem 0.2rem;
+    background-size: 0.6rem 0.6rem;
+    text-indent: -9999rem;
+  }
+  .yp_box .foot_btn .btn_yinying .btn_lxwm .btn_content {
+    width: 100%;
+    color: #ff6b6b;
+  }
+  .yp_box .foot_btn .btn_yinying .btn_lxwm .btn_content p {
+    padding: .3rem 0 0 0;
+    color: #000;
+  }
+  .banner img{
+    width: 100%;
+  }
+  

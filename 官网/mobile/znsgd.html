@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一盆智能果蔬店</title>
+    <link rel="SHORTCUT ICON" href="./img/yp_icon.png" />
+    <script async="async" type="text/javascript" src="js/rem.js"></script>
+    <script src="js/jq.js"></script>
+    <script src="./dist/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/zhsq.css">
+</head>
+
+<body>
+    <div class="yp_box">
+        <div class="yinying">
+            <div class="nav_list">
+                <div class="nav_title">
+                    <span>一盆社区</span>
+                    <img class="navList_img" src="./img/cha.png" alt="">
+                </div>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./zhsq.html">智慧社区</a></li>
+                    <li><a href="./gnjf.html">缴费系统</a></li>
+                    <li style="color:#ff6b6b"><a href="./znsgd.html">智能蔬果店</a></li>
+                    <li><a href="./yyhz.html">运营合作</a></li>
+                    <li><a href="./scxt.html">商城系统</a></li>
+                    <li><a href="./gywm.html">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+        <header class="head">
+            <div class="title">
+                <h1>一盆社区</h1>
+            </div>
+            <div class="nav">=</div>
+
+        </header>
+        <div class="banner">
+            <!-- 引用的swiper组件 -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner1.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner2.jpg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img alt="" src="./img/banner3.jpg">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <section class="content">
+
+            一盆智能果蔬店
+            <script>
+                //banner组件
+                var mySwiper = new Swiper('.swiper-container', {
+                    pagination: '.swiper-pagination',
+                    loop: true,
+                    autoplay: 3000,
+                    autoplayDisableOnInteraction: false    /* 注意此参数，默认为true */
+                });
+                //导航
+                $('.nav').on('click', function () {
+                    $(".yinying").stop().animate({ width: "10.8rem" }, 200);
+                    $('html,body').addClass('ovfHiden'); //使网页不可滚动
+                })
+                $('.navList_img').on('click', function () {
+                    $(".yinying").stop().animate({ width: "0" }, 200);
+                    $('html,body').removeClass('ovfHiden'); //使网页恢复可滚
+                })
+
+
+
+            </script>
+    </div>
+</body>
+
+</html>

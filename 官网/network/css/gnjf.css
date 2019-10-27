@@ -1,0 +1,141 @@
+.gn_list1 {
+    /* height: 800px; */
+    padding-top: 100px;
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+
+.gn_list_left {
+    width: 100%;
+    height: 100%;
+}
+
+.gn_list_left li {
+    height: 100px;
+}
+.gn_list_img{
+    float: left;
+    margin: 30px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+.gn_list_left li span{
+    float: left;
+    height: 70px;
+    font-size: 24px;
+    line-height: 26px;
+    margin:15px 0;
+    padding:20px 30px;
+    background-image: url(../img/text_bj.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.gn_list_right{
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 500px;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.gn_list_right img{
+    width: 100%;
+}
+
+.gn_list2 {
+    /* height: 800px; */
+    padding-bottom: 250px;
+}
+
+.gn_header {
+    width: 100%;
+    height: 100px;
+    margin: 50px 0 30px 0;
+}
+
+.gn_header h2 {
+    padding-top: 30px;
+    font-size: 36px;
+    line-height: 100px;
+    text-indent: 83px;
+}
+
+.gn_ul {
+    width: 100%;
+    height: 700px;
+}
+
+.gn_li {
+    height: 100px;
+}
+
+.gn_img {
+
+    float: left;
+    margin: 30px;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+.gn_span {
+    float: left;
+    height: 70px;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 15px 0;
+    padding: 20px 0;
+}
+
+.gn_list3 {
+    width: 100%;
+    height: 840px;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+
+.list3_img img{
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 400px;
+    padding-top: 90px;
+    background-color: #373334;
+    color: #fff;
+}
+
+.footer_left {
+    float: left;
+}
+
+.footer_left h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.footer_left p {
+    font-size: 18px;
+    line-height: 48px;
+}
+
+.footer_right {
+    float: right;
+}
+
+.footer_right img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.footer_right span {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}

@@ -1,0 +1,119 @@
+/**********
+固定右侧导航（qq.wx.phone）
+***********/
+	body{
+		position: relative;
+		background: #EFF2F4;
+		font: normal 13px "宋体" !important;
+	}
+	body,div,ul,li,p,a,img{
+		padding: 0;
+		margin: 0;
+	}
+	/*右侧悬浮菜单*/
+	.slide{
+		width: 50px;
+		height: 220px;
+		position: fixed;
+		top: 58%;
+		background: #999d9e;
+		right: 0;
+		border-radius: 5px 0 0 5px;
+		z-index: 999;
+	}
+	.slide ul{
+		list-style: none;
+	}
+	/*二维码框的大小*/
+	.slide .info{
+		top: 50%;
+		height: 150px;
+		position: absolute;
+		right: 100%;
+		background: #cccccc;
+		width: 0px;
+		overflow: hidden;
+		margin-top: -73.5px;
+		transition:0.5s;
+		border-radius:4px 0 0 4px ;
+	}
+	.slide .info.hover{
+		width: 145px;
+		
+	}
+	.slide .info li{
+		width: 145px;
+		color: #000000;
+		text-align: center;
+	}
+	.slide .info li p{
+		font-size: 1.1em;
+		line-height: 2em;
+		padding: 15px;
+		text-align: left;
+	}
+	.slide .info li.qq p a{
+		display: block;
+		margin-top: 12px;
+		width: 100px;
+		height: 32px;
+		line-height: 30px;
+		color: #ff6b6b;
+		font-size: 16px;   
+		text-align: center;
+		text-decoration: none;
+		border: 1.5px solid #000000;
+		border-radius: 5px;
+	}
+	.slide .info li.qq p a:hover{
+		color: #000000;
+		border: none;
+		background: #ff6b6b;
+	}
+	.slide .info li div.img{
+		height: 100%;
+		background: #FFFFFF;
+		margin: 15px;
+	}
+	.slide .info li div.img img{
+		width: 100%;
+		height: 100%;
+	}
+	/*控制菜单的按钮*/
+	.index_cy{
+		width: 30px;
+		height: 30px;
+		background: url(../../img/rightnav/index_cy.png);
+		position: fixed;
+		right: 6px;
+		top: 59%;
+		margin-top: 220px;
+		background-position: 62px 0;
+	}
+	.index_cy2{
+		width: 30px;
+		height: 30px;
+		background: url(../../img/rightnav/index_cy.png);
+		position: fixed;
+		right: 0;
+		top: 55%;
+		margin-top: 140px;
+		background-position: 30px 0;
+		cursor: pointer;
+	}
+	
+	/*自适应 当屏小于1050时隐藏*/
+	@media screen and (max-width: 1050px) {
+		.slide{
+			display: none;
+		}
+		#btn{
+			display: none;
+		}
+		
+	}
+
+/*********************
+  固定右侧导航E（qq.wx.phone）
+**********************/
+

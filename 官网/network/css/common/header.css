@@ -1,0 +1,81 @@
+/* CSS Document */
+/*全局样式*/
+*{margin:0px;padding: 0px;font-family: "微软雅黑";outline: none;}
+a{text-decoration: none;color: black;}
+ul,li{list-style-type: none;}
+img{border: 0px;}
+
+
+/**************************
+     导航S
+***************************/
+/*导航样式*/
+/*导航底色*/
+.navbox {
+	width: 100%;
+	height: 40px;
+	background-color:#e6e6e6;
+}
+/*导航应用所占长度*/
+.nav {
+	width: 1600px;
+	height: 40px;
+	margin: auto;
+}
+/*每个应用的长度*/
+.nav>ul>li{
+	width: 192px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	float: left;
+	background-image: url(../../img/headerfooter/nav-bg.gif);
+	background-repeat: no-repeat;
+	background-position: -240px 0px;
+	transition: all 1s;
+}
+.nav>ul>li>a{
+/*	font-size: 20px;*/
+	display: block;
+	color: #000;
+}
+.nav>ul>li>a:hover{color:#fff}
+.navhover{
+	background-position: 0px 0px !important;
+}
+/**************************
+     导航E
+***************************/
+
+
+/**************************
+     头部联系方式S
+***************************/
+.header{
+	height: 60px;
+	width: 100%;
+}
+.lianxi{
+	 white-space:nowrap; 
+}
+
+.text{
+color: #000000;
+font-size: 22px;
+line-height: 30px;
+font-family: "黑体"；
+}
+.touch{
+	margin-bottom: 10px;
+	color: #ff6b6b;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: "黑体"；
+}
+
+/**************************
+     头部联系方式E
+***************************/
+
+
+
